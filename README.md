@@ -1,4 +1,4 @@
-# Hassie-s-Algorithm-Illustrator.github.io
+# :wave: Hassie-s-Algorithm-Illustrator.github.io
 
 🙋‍♂️Hello innovators,
 A intersting Mathematical riddle in Maths which is still a mystery called 3x+1 map or Collatz conjecture or Hassie's algorithm, which is simple to understand :-
