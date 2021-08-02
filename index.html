@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasse's Algorithm</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.0/dist/chart.min.js"></script>
+</head>
+
+<body>
+    <canvas id="myChart" width="10" height="10"></canvas>
+    <script>
+        var ctx = document.getElementById('myChart');
+        var input = parseInt(prompt("Enter your input for iteration"));
+        var xlabels = [];
+        var ylabels = [];
+        var iterations = 0;
+        function loadChart() {
+            var myChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: xlabels,
+                    datasets: [{
+                        label: "Value for Hasse's algorithm on " + input,
+                        data: ylabels,
+                        borderColor: [
+                            'rgba(255, 99, 132, 1)',
+                        ],
+                    }]
+                },
+            });
+        }
+        function conjecture(n) {
+            ylabels.push(n);
+            xlabels.push("I-" + iterations);
+            while (n != 1) {
+                if (n % 2 == 0) {
+                    n /= 2;
+                }
+                else {
+                    n = ((3 * n) + 1);// we can divide it by 2 
+                }
+                iterations++;
+                ylabels.push(n);
+                xlabels.push("I-" + iterations);
+            }
+        }
+        conjecture(input);
+        loadChart();
+    </script>
+</body>
+</html>
