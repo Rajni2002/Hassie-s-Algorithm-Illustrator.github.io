@@ -1,7 +1,7 @@
 # :wave: Hassie-s-Algorithm-Illustrator.github.io
 
 🙋‍♂️Hello innovators,
-A intersting Mathematical riddle in Maths which is still a mystery called 3x+1 map or Collatz conjecture or Hassie's algorithm, which is simple to understand :-
+A interesting Mathematical conjecture in Maths called 3x+1 map or Collatz conjecture or Hassie's algorithm, which is simple to understand :-
 🧠
 1. Take a any natural number.(let x)
 2. If the number is even then divide it by 2.( x -> x/2)
